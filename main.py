@@ -1,3 +1,38 @@
+
+### DIAGRAMAS DE FLUJO
+
+# 1. Algoritmo que pide tu nombre y lo imprime por pantalla
+
+print('Tu nombre es {}'.format(input('Introduce tu nombre: ')))
+
+# 2. Algoritmo que cuenta hasta el 10 e imprime por pantalla el número por el que va contando.
+
+print('Esto es un contador:')
+for n in range(0,10): print(n+1)
+
+# 3. Algoritmo que simula mandar un mensaje de whatsapp
+
+print('Abriendo la apliación de WhatsApp...')
+contacto = input('Introduce el nombre del contacto al que le quieres mandar el mensaje: ')
+print(f'Entrando al chat de {contacto}...')
+mensaje = input('Introduce el mensaje que quieres enviar: ')
+print('Enviando mensaje...')
+print('Mensaje enviado.')
+
+# 4. Algoritmo que escribe "Hola" cinco veces
+
+for n in range(0,5): print('Hola')
+
+# 5. Algoritmo que pide un número y calcula su raíz cuadrada
+
+while True:
+    numero = input('Introduce un número: ')
+    if int(numero) < 0: print('No existe la raíz cuadrada de un número negativo')
+    else: print(f'La raíz cuadrada de {numero} es {srqt(numero)}')
+
+
+### PSEUDOCÓDIGO
+
 # 1. Algoritmo que calcula el área de un triángulo
 
 base = int(input('Introduce la base: '))
