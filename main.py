@@ -30,6 +30,47 @@ while True:
     if int(numero) < 0: print('No existe la raíz cuadrada de un número negativo')
     else: print(f'La raíz cuadrada de {numero} es {srqt(numero)}')
 
+# 6. Algoritmo que dados 2 valores de entrada imprime 
+# la división del mayor entre el menor
+
+n1 = int(input('Introduce el primer número: '))
+n2 = int(input('Introduce el segundo número: '))
+
+if n1 >= n2: print(f'{n1}/{n2} = {n1/n2}')
+else: print(f'{n2}/{n1} = {n2/n1}')
+
+# 7. Algoritmo que  imprime solo los números 
+# pares del 100 al 0,  en orden decreciente.
+
+for n in range(0,101):
+    if (100-n)%2 == 0: print(100-n)
+
+# 8. Algoritmo que aplica el Teorema de Pitágoras, es decir, determina la 
+# hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos catetos
+
+from math import sqrt
+
+c1 = int(input('Introduce la longitud del primer cateto: '))
+c2 = int(input('Introduce la longitud del segundo cateto: '))
+
+print(f'La hipotenusa tendrá una longitud de {sqrt(((c1*c1)+(c2*c2)))}')
+
+# 9. Algoritmo que pide cinco números e impre el mayor y el menor
+
+lista = []
+for n in range(0,5): 
+    lista.append(int(input('Introduce un número: ')))
+print(f'El número mayor es {max(lista)} y el menor es {min(lista)}')
+
+# 10. Algoritmo que lea un número N. A continuación pedirá que se introduzcan N notas y devolverá la media aritmética
+
+media = 0
+notas = []
+n = int(input('Introduce el número de notas: '))
+for i in range(0,n): notas.append(int(input('Introduce una nota: ')))
+for nota in notas: media += nota
+print(f'La media aritmética de las notas introducidas es {media/n}')
+
 
 ### PSEUDOCÓDIGO
 
@@ -87,7 +128,7 @@ while True:
     numero = int(input('Introduce un número entre el 1 y el 10'))
     if numero == numero_aleatorio:
         break
-        else: print('Sigue intentandolo...')
+    else: print('Sigue intentandolo...')
 print('Lo has adivinado. El número era: {}'.format(numero))
 
 # 7. Algoritmo que pide el número de un mes y devuelve el mes en cuestión
